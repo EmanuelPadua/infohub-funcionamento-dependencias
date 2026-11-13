@@ -10,9 +10,9 @@
        Ajuste a tag <title> e a <meta description> para o nome do seu setor.
        Exemplo: "Achados e Perdidos — InfoHub FAMINAS"
        ==================================================================== -->
-  <title>Setor: [Nome do Setor] — InfoHub FAMINAS</title>
+  <title>Dependências — InfoHub FAMINAS</title>
   <meta name="description"
-    content="Canal de autoatendimento institucional desenvolvido pelos discentes de Análise e Desenvolvimento de Sistemas (ADS) na disciplina de Engenharia de Software da FAMINAS." />
+    content="Guia de autoatendimento sobre dependências no UNIFAMINAS Muriaé: regras, prazos, modalidades, valores e passo a passo. Projeto de ADS na disciplina de Engenharia de Software da FAMINAS." />
 
   <link rel="icon" type="image/png" href="./assets/images/logo-faminas.png" />
 
@@ -84,12 +84,12 @@
 
         <!-- [EDITÁVEL]: Nome do Setor -->
         <h1 id="hero-heading" class="hero-title">
-          Setor: <span>[Nome do Setor Institucional]</span>
+          Setor: <span>Dependências</span>
         </h1>
 
         <!-- [EDITÁVEL]: Descrição e Propósito do Setor apurados na entrevista -->
         <p class="hero-description">
-          Canal unificado de autoatendimento, mapeamento de processos oficiais, orientações normativas e canais de contato homologados junto à coordenação e gestão setorial da FAMINAS.
+          Tudo sobre dependências em um só lugar: regras e limites, prazos de solicitação, modalidades de oferta, cálculo financeiro e o passo a passo pelo Portal do Aluno, com orientações apuradas junto à gestão do setor.
         </p>
 
         <div class="hero-badges-group" aria-label="Informações do autoatendimento">
@@ -119,8 +119,7 @@
          ==================================================================== -->
     <section id="features" class="sector-content-section" aria-labelledby="sector-content-heading">
       <div class="container">
-        
-        <!-- Cabeçalho da Seção Central -->
+
         <div class="sector-section-header">
           <div class="sector-section-tag">
             <span class="material-symbols-outlined" aria-hidden="true">help_center</span>
@@ -130,23 +129,21 @@
             Como Podemos Ajudar Você Hoje?
           </h2>
           <p class="sector-section-subtitle">
-            Consulte as principais solicitações, prazos e canais de atendimento direto mapeados pela equipe discente.
+            Entenda as regras, os prazos e o passo a passo para solicitar uma dependência no UNIFAMINAS Muriaé, sem cair nos erros mais comuns.
           </p>
         </div>
 
-        <!-- EXEMPLO DE BLOCO 1: Grid de Tópicos / Serviços Frequentes -->
+        <!-- Atalhos -->
         <div class="sector-grid">
           <article class="sector-card">
             <div class="sector-card-icon" aria-hidden="true">
-              <span class="material-symbols-outlined">assignment</span>
+              <span class="material-symbols-outlined">rule</span>
             </div>
-            <h3 class="sector-card-title">Orientações e Normas</h3>
+            <h3 class="sector-card-title">Regras e Limites</h3>
             <p class="sector-card-text">
-              Consulte a regulamentação oficial, formulários obrigatórios e o passo a passo para abertura formal de chamados.
+              Limite de 7 dependências, vínculo financeiro e pedagógico e onde tirar dúvidas do dia a dia.
             </p>
-            <a href="#fluxo" class="btn btn-outline-light" style="color: var(--color-primary-navy) !important; border-color: var(--color-border);">
-              Ver Passo a Passo
-            </a>
+            <a href="#regras" class="btn btn-outline-light card-link">Ver Regras</a>
           </article>
 
           <article class="sector-card">
@@ -155,100 +152,328 @@
             </div>
             <h3 class="sector-card-title">Prazos e Calendário</h3>
             <p class="sector-card-text">
-              Fique atento às datas-limite para envio de requerimentos, renovações e homologação de documentos institucionais.
+              Janelas de solicitação em janeiro e julho, início das aulas e data-limite para cancelamentos e ajustes.
             </p>
-            <a href="#prazos" class="btn btn-outline-light" style="color: var(--color-primary-navy) !important; border-color: var(--color-border);">
-              Consultar Datas
-            </a>
+            <a href="#prazos" class="btn btn-outline-light card-link">Consultar Datas</a>
           </article>
 
           <article class="sector-card">
             <div class="sector-card-icon" aria-hidden="true">
-              <span class="material-symbols-outlined">contact_phone</span>
+              <span class="material-symbols-outlined">payments</span>
             </div>
-            <h3 class="sector-card-title">Canais de Atendimento</h3>
+            <h3 class="sector-card-title">Modalidades e Valores</h3>
             <p class="sector-card-text">
-              Localização física no campus, horários de funcionamento presencial, telefone, e-mail institucional e WhatsApp oficial.
+              Como as dependências são ofertadas (PAE, Turma Especial ou EAD) e como o valor entra na mensalidade.
             </p>
-            <a href="#contato" class="btn btn-outline-light" style="color: var(--color-primary-navy) !important; border-color: var(--color-border);">
-              Ver Contatos
-            </a>
+            <a href="#modalidades" class="btn btn-outline-light card-link">Ver Modalidades</a>
           </article>
         </div>
 
-        <!-- EXEMPLO DE BLOCO 2: Fluxo Passo a Passo -->
-        <div id="fluxo" style="margin-top: 3rem; background: var(--color-bg-card); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border);">
-          <h3 style="font-size: 1.35rem; color: var(--color-primary-navy); margin-bottom: 0.5rem;">
-            Passo a Passo do Processo Setorial
-          </h3>
-          <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
-            Siga as etapas abaixo para protocolar ou resolver sua demanda com rapidez:
-          </p>
+        <!-- Regras gerais + simulador -->
+        <section id="regras" class="info-panel" aria-labelledby="regras-titulo">
+          <h3 id="regras-titulo" class="panel-title">Regras Gerais e Limites</h3>
+          <p class="panel-lead">O que vale para toda solicitação de dependência:</p>
+
+          <ul class="rules-list">
+            <li class="rule-item">
+              <span class="material-symbols-outlined" aria-hidden="true">block</span>
+              <div>
+                <strong>Limite máximo de 7 dependências</strong>
+                <p>Ultrapassar esse teto obriga o aluno a reter e voltar de período.</p>
+              </div>
+            </li>
+            <li class="rule-item">
+              <span class="material-symbols-outlined" aria-hidden="true">sync_alt</span>
+              <div>
+                <strong>Vínculo financeiro e pedagógico</strong>
+                <p>O aluno continua pagando e cursando a disciplina em paralelo. Não é permitido pagar antecipadamente para cursar a matéria em semestres futuros.</p>
+              </div>
+            </li>
+            <li class="rule-item">
+              <span class="material-symbols-outlined" aria-hidden="true">forum</span>
+              <div>
+                <strong>Suporte e dúvidas</strong>
+                <p>Dúvidas operacionais do dia a dia são tratadas via Workchat ou no atendimento da Coordenação.</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="simulator" aria-labelledby="sim-titulo">
+            <h4 id="sim-titulo" class="simulator-title">
+              <span class="material-symbols-outlined" aria-hidden="true">calculate</span>
+              Simulador: estou dentro do limite?
+            </h4>
+            <label for="dep-count" class="simulator-label">Quantas dependências você teria no total?</label>
+            <div class="simulator-row">
+              <input type="number" id="dep-count" class="simulator-input" min="0" max="30" value="0" inputmode="numeric" />
+              <div class="simulator-meter" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0" aria-label="Uso do limite de dependências" id="dep-meter">
+                <div class="simulator-meter-fill" id="dep-meter-fill"></div>
+              </div>
+            </div>
+            <p id="dep-result" class="simulator-result" role="status" aria-live="polite">Informe um valor para ver sua situação.</p>
+            <p class="simulator-note">Ferramenta apenas informativa. A análise oficial é feita pela Coordenação.</p>
+          </div>
+        </section>
+
+        <!-- Passo a passo -->
+        <section id="fluxo" class="info-panel" aria-labelledby="fluxo-titulo">
+          <h3 id="fluxo-titulo" class="panel-title">Passo a Passo para Solicitar</h3>
+          <p class="panel-lead">Siga as etapas abaixo para solicitar sua dependência com segurança:</p>
 
           <ol class="process-steps-list">
             <li class="process-step-item">
               <span class="step-number">1</span>
               <div class="step-content">
-                <strong>Reunir a Documentação Necessária</strong>
-                <p>Verifique com antecedência os comprovantes exigidos e tenha em mãos seu número de matrícula institucional.</p>
+                <strong>Acompanhe o edital de Oferta de Dependências</strong>
+                <p>A solicitação acontece em janeiro (1º semestre) e julho (2º semestre), seguindo o edital do período.</p>
               </div>
             </li>
             <li class="process-step-item">
               <span class="step-number">2</span>
               <div class="step-content">
-                <strong>Protocolar o Requerimento</strong>
-                <p>Abra o requerimento pelo portal acadêmico ou compareça presencialmente ao setor nos horários indicados.</p>
+                <strong>Confira pré-requisitos e horários</strong>
+                <p>Verifique se a dependência não tranca disciplinas do semestre atual e se o horário da oferta alternativa não bate com a sua grade obrigatória.</p>
               </div>
             </li>
             <li class="process-step-item">
               <span class="step-number">3</span>
               <div class="step-content">
-                <strong>Acompanhar o Parecer e Retirada</strong>
-                <p>Acompanhe o status do chamado e receba a confirmação ou retirada do documento protocolado.</p>
+                <strong>Solicite pelo Portal do Aluno</strong>
+                <p>Durante a janela de rematrícula, selecione a disciplina no Portal Educacional.</p>
+              </div>
+            </li>
+            <li class="process-step-item">
+              <span class="step-number">4</span>
+              <div class="step-content">
+                <strong>Conclua o aceite contratual e financeiro</strong>
+                <p>Selecionar a disciplina não basta: é preciso confirmar o aceite no portal dentro do prazo do edital.</p>
+              </div>
+            </li>
+            <li class="process-step-item">
+              <span class="step-number">5</span>
+              <div class="step-content">
+                <strong>Aguarde o início das aulas</strong>
+                <p>As aulas começam de forma assíncrona, cerca de um mês após o início do semestre regular.</p>
               </div>
             </li>
           </ol>
-        </div>
 
-        <!-- EXEMPLO DE BLOCO 3: Perguntas Frequentes (FAQ) -->
-        <div style="margin-top: 3rem;">
-          <h3 style="font-size: 1.35rem; color: var(--color-primary-navy); margin-bottom: 1rem;">
-            Dúvidas Frequentes do Setor
-          </h3>
-          <div class="faq-accordion">
+          <div class="callout callout-pending">
+            <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+            <p><strong>Perdeu o prazo?</strong> Abra um protocolo/requerimento online para a Secretaria de Registro Acadêmico ou peça autorização da Coordenação do curso via Workchat.</p>
+          </div>
+        </section>
+
+        <!-- Prazos -->
+        <section id="prazos" class="info-panel" aria-labelledby="prazos-titulo">
+          <h3 id="prazos-titulo" class="panel-title">Prazos e Calendário</h3>
+          <p class="panel-lead">As datas exatas de cada semestre constam no edital e no Calendário Escolar.</p>
+
+          <div class="deadline-grid">
+            <article class="deadline-card">
+              <span class="badge-pill badge-cyan">Solicitação</span>
+              <h4>Janeiro e julho</h4>
+              <p>Janeiro para o 1º semestre e julho para o 2º semestre, conforme o edital de Oferta de Dependências.</p>
+            </article>
+            <article class="deadline-card">
+              <span class="badge-pill badge-navy">Início das aulas</span>
+              <h4>Cerca de 1 mês depois</h4>
+              <p>Meados de março no 1º semestre e agosto/setembro no 2º semestre. As aulas começam de forma assíncrona.</p>
+            </article>
+            <article class="deadline-card">
+              <span class="badge-pill badge-cyan">Cancelamento e ajustes</span>
+              <h4>Até a data-limite</h4>
+              <p>Podem ser feitos até a data estipulada no Calendário Escolar do semestre.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Modalidades e financeiro -->
+        <section id="modalidades" class="info-panel" aria-labelledby="modalidades-titulo">
+          <h3 id="modalidades-titulo" class="panel-title">Modalidades de Oferta e Valores</h3>
+          <p class="panel-lead">Para evitar choque com as matérias do período atual, as dependências são ofertadas em modalidades alternativas:</p>
+
+          <div class="modality-grid">
+            <article class="modality-card">
+              <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+              <h4>PAE / Turma Especial / Classe Especial</h4>
+              <p>Plano de Acompanhamento de Estudos com aulas presenciais em horários modulares: contraturno, turnos alternativos ou sábados.</p>
+            </article>
+            <article class="modality-card">
+              <span class="material-symbols-outlined" aria-hidden="true">laptop_chromebook</span>
+              <h4>EAD</h4>
+              <p>Ambiente virtual de aprendizagem com apoio de tutores, para as disciplinas elegíveis.</p>
+            </article>
+            <article class="modality-card">
+              <span class="material-symbols-outlined" aria-hidden="true">receipt_long</span>
+              <h4>Cálculo financeiro</h4>
+              <p>O valor é proporcional à carga horária ou ao número de créditos da disciplina e é diluído nas parcelas da mensalidade do semestre corrente, após a confirmação no portal.</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Erros comuns -->
+        <section id="erros" class="info-panel" aria-labelledby="erros-titulo">
+          <h3 id="erros-titulo" class="panel-title">Erros Comuns e Restrições</h3>
+          <p class="panel-lead">Fique atento a estes três pontos antes de confirmar:</p>
+
+          <ul class="alert-grid">
+            <li class="alert-card">
+              <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+              <div>
+                <strong>Quebra de pré-requisitos</strong>
+                <p>Incluir dependência de uma matéria que tranca o avanço das disciplinas do semestre atual.</p>
+              </div>
+            </li>
+            <li class="alert-card">
+              <span class="material-symbols-outlined" aria-hidden="true">event_busy</span>
+              <div>
+                <strong>Conflito de horários não verificado</strong>
+                <p>Não conferir os horários da oferta alternativa e gerar sobreposição com a grade obrigatória.</p>
+              </div>
+            </li>
+            <li class="alert-card">
+              <span class="material-symbols-outlined" aria-hidden="true">assignment_late</span>
+              <div>
+                <strong>Falta de confirmação</strong>
+                <p>Selecionar a disciplina no portal, mas não concluir o aceite contratual/financeiro dentro do prazo do edital.</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq-section" aria-labelledby="faq-titulo">
+          <h3 id="faq-titulo" class="panel-title">Dúvidas Frequentes do Setor</h3>
+          <div class="faq-search">
+            <span class="material-symbols-outlined" aria-hidden="true">search</span>
+            <input type="search" id="faq-search" placeholder="Buscar nas dúvidas (ex.: prazo, EAD, valor)" aria-label="Buscar nas dúvidas frequentes" />
+          </div>
+          <div class="faq-accordion" id="faq-list">
             <details class="faq-item">
               <summary class="faq-summary">
-                <span>Qual é o prazo médio de resposta para solicitações deste setor?</span>
+                <span>Qual é o número máximo de dependências?</span>
                 <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
               </summary>
-              <div class="faq-content">
-                O prazo de análise institucional varia entre 2 a 5 dias úteis, dependendo da complexidade do requerimento e do calendário acadêmico vigente.
-              </div>
+              <div class="faq-content">O limite é de 7 dependências. Passar desse teto obriga o aluno a reter e voltar de período.</div>
             </details>
             <details class="faq-item">
               <summary class="faq-summary">
-                <span>O atendimento presencial exige agendamento prévio?</span>
+                <span>Posso pagar antecipado para cursar uma matéria em semestres futuros?</span>
                 <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
               </summary>
-              <div class="faq-content">
-                Para a maioria dos serviços o atendimento é por ordem de chegada na recepção do setor. Em períodos de pico de matrícula ou eventos especiais, recomenda-se verificar aviso oficial.
-              </div>
+              <div class="faq-content">Não. O aluno continua pagando e cursando a disciplina em paralelo, e o pagamento antecipado para semestres futuros não é permitido.</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Onde e quando solicito uma dependência?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">Pelo Portal do Aluno (Portal Educacional), durante a janela de rematrícula, em janeiro (1º semestre) e julho (2º semestre), seguindo o edital de Oferta de Dependências.</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Perdi o prazo. O que faço?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">Abra um protocolo/requerimento online para a Secretaria de Registro Acadêmico ou peça autorização da Coordenação do curso via Workchat.</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Quando começam as aulas das dependências?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">De forma assíncrona, cerca de um mês após o início do semestre regular: meados de março no 1º semestre e agosto/setembro no 2º semestre.</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Como o valor da dependência é cobrado?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">O valor é proporcional à carga horária ou ao número de créditos e é incorporado às parcelas da mensalidade do semestre corrente, após a confirmação no portal.</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>Posso cancelar ou ajustar a solicitação?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">Sim, até a data-limite estipulada no Calendário Escolar do semestre.</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">
+                <span>E se a dependência bater horário com minhas aulas?</span>
+                <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+              </summary>
+              <div class="faq-content">Por isso existem as ofertas alternativas (PAE/Turma Especial em contraturno ou sábados, e EAD). Confira os horários antes de confirmar para não gerar sobreposição com a grade obrigatória.</div>
             </details>
           </div>
-        </div>
+          <p id="faq-empty" class="faq-empty" hidden>Nenhuma dúvida encontrada. Fale com a Coordenação pelos canais abaixo.</p>
+        </section>
 
-        <!-- EXEMPLO DE BLOCO 4: Banner de Contato Oficial -->
+        <!-- Criadores / Desenvolvedores -->
+        <section id="criadores" class="info-panel" aria-labelledby="criadores-titulo">
+          <h3 id="criadores-titulo" class="panel-title">Quem Desenvolveu Esta Página</h3>
+          <p class="panel-lead">Projeto de Extensão Universitária desenvolvido pela equipe do Grupo 6 — disciplina de Engenharia de Software (ADS / FAMINAS).</p>
+
+          <div class="team-grid">
+            <article class="team-card">
+              <div class="team-avatar" aria-hidden="true">E</div>
+              <h4 class="team-name">Emanuel Padua</h4>
+              <p class="team-role">Acadêmico de ADS</p>
+              <a href="https://github.com/EmanuelPadua" class="team-link" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar" aria-hidden="true">I</div>
+              <h4 class="team-name">Isaac Dias</h4>
+              <p class="team-role">Acadêmico de ADS</p>
+              <a href="https://github.com/isaacds10" class="team-link" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar" aria-hidden="true">L</div>
+              <h4 class="team-name">Luis Otávio</h4>
+              <p class="team-role">Acadêmico de ADS</p>
+              <a href="https://github.com/luisOtavio-007" class="team-link" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </article>
+
+            <article class="team-card">
+              <div class="team-avatar" aria-hidden="true">F</div>
+              <h4 class="team-name">Fernando Barros</h4>
+              <p class="team-role">Acadêmico de ADS</p>
+              <a href="https://github.com/FernandoNeto77" class="team-link" target="_blank" rel="noopener noreferrer">
+                <span class="material-symbols-outlined" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Contato -->
         <div id="contato" class="contact-banner">
           <div class="contact-banner-meta">
             <h3>Precisa de Atendimento com a Equipe do Setor?</h3>
-            <p>Atendimento presencial no campus FAMINAS • Segunda a Sexta: 08h às 21h</p>
+            <p>Atendimento presencial no campus FAMINAS • Segunda a Sexta: 08h às 21h • Dúvidas rápidas: Workchat ou Coordenação</p>
           </div>
           <div class="contact-banner-actions">
-            <a href="mailto:atendimento@faminas.edu.br" class="btn btn-outline-light">
+            <a href="mailto:faminas@faminas.edu.br" class="btn btn-outline-light">
               <span class="material-symbols-outlined" aria-hidden="true">mail</span>
               <span>Enviar E-mail</span>
             </a>
-            <a href="tel:+553237297000" class="btn btn-primary-highlight">
+            <button type="button" class="btn btn-outline-light" data-copy="faminas@faminas.edu.br">
+              <span class="material-symbols-outlined" aria-hidden="true">content_copy</span>
+              <span>Copiar E-mail</span>
+            </button>
+            <a href="tel:+553237297500" class="btn btn-primary-highlight">
               <span class="material-symbols-outlined" aria-hidden="true">call</span>
               <span>Ligar para o Setor</span>
             </a>

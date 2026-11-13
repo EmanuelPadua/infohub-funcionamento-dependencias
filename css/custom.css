@@ -211,3 +211,398 @@
   color: var(--color-text-muted);
   line-height: 1.6;
 }
+
+
+/* ==========================================================================
+   SETOR: DEPENDÊNCIAS — componentes adicionados pela equipe (Grupo 6)
+   ========================================================================== */
+
+.card-link {
+  color: var(--color-primary-navy) !important;
+  border-color: var(--color-border);
+  align-self: flex-start;
+}
+
+.card-link:hover {
+  background: var(--color-bg-surface);
+  border-color: var(--color-cyan-faminas);
+}
+
+.info-panel {
+  margin-top: 3rem;
+  background: var(--color-bg-card);
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  scroll-margin-top: 5.5rem;
+}
+
+.panel-title {
+  font-size: 1.35rem;
+  color: var(--color-primary-navy);
+  margin-bottom: 0.5rem;
+}
+
+.panel-lead {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Regras */
+.rules-list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .rules-list { grid-template-columns: repeat(3, 1fr); }
+}
+
+.rule-item {
+  display: flex;
+  gap: 0.85rem;
+  padding: 1rem;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.rule-item > .material-symbols-outlined {
+  color: var(--color-primary-blue);
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.rule-item strong {
+  display: block;
+  color: var(--color-primary-navy);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.rule-item p {
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* Simulador */
+.simulator {
+  margin-top: 1.75rem;
+  padding: 1.25rem;
+  border: 1px dashed var(--color-border-hover);
+  border-radius: var(--radius-md);
+}
+
+.simulator-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.05rem;
+  color: var(--color-primary-navy);
+  margin-bottom: 0.75rem;
+}
+
+.simulator-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.simulator-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.simulator-input {
+  width: 5.5rem;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  border: 1px solid var(--color-border-hover);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-main);
+}
+
+.simulator-input:focus-visible {
+  outline: 2px solid var(--color-cyan-faminas);
+  outline-offset: 2px;
+}
+
+.simulator-meter {
+  flex: 1;
+  height: 0.75rem;
+  background: var(--color-bg-subtle);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.simulator-meter-fill {
+  height: 100%;
+  width: 0;
+  background: var(--color-status-active);
+  border-radius: var(--radius-pill);
+  transition: width var(--transition-smooth), background-color var(--transition-smooth);
+}
+
+.simulator-meter-fill.is-limit { background: var(--color-status-pending); }
+.simulator-meter-fill.is-over { background: #DC2626; }
+
+.simulator-result {
+  margin-top: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary-navy);
+}
+
+.simulator-note {
+  margin-top: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+/* Destaque */
+.callout {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+}
+
+.callout-pending {
+  background: var(--color-status-pending-bg);
+  border-left: 4px solid var(--color-status-pending);
+  color: var(--color-text-main);
+}
+
+.callout .material-symbols-outlined { color: var(--color-status-pending); }
+
+/* Prazos e modalidades */
+.deadline-grid,
+.modality-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .deadline-grid,
+  .modality-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.deadline-card,
+.modality-card {
+  padding: 1.25rem;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.deadline-card h4,
+.modality-card h4 {
+  font-size: 1.05rem;
+  color: var(--color-primary-navy);
+  margin: 0.75rem 0 0.4rem;
+}
+
+.deadline-card p,
+.modality-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+}
+
+.modality-card > .material-symbols-outlined {
+  color: var(--color-primary-blue);
+  font-size: 1.8rem;
+}
+
+.modality-card h4 { margin-top: 0.5rem; }
+
+/* Erros comuns */
+.alert-grid {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .alert-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.alert-card {
+  display: flex;
+  gap: 0.85rem;
+  padding: 1rem 1.15rem;
+  background: var(--color-status-pending-bg);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: var(--radius-md);
+}
+
+.alert-card > .material-symbols-outlined {
+  color: var(--color-status-pending);
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.alert-card strong {
+  display: block;
+  color: var(--color-primary-navy);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.alert-card p {
+  font-size: 0.88rem;
+  color: var(--color-text-main);
+  line-height: 1.5;
+}
+
+/* FAQ com busca */
+.faq-section {
+  margin-top: 3rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.faq-search {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0 0;
+  padding: 0 1rem;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-hover);
+  border-radius: var(--radius-pill);
+}
+
+.faq-search .material-symbols-outlined { color: var(--color-text-light); }
+
+.faq-search input {
+  flex: 1;
+  padding: 0.75rem 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  color: var(--color-text-main);
+}
+
+.faq-search:focus-within { border-color: var(--color-cyan-faminas); }
+
+.faq-summary .material-symbols-outlined {
+  transition: transform var(--transition-fast);
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+}
+
+.faq-item[open] .faq-summary .material-symbols-outlined { transform: rotate(180deg); }
+
+.faq-item[hidden] { display: none; }
+
+.faq-empty {
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-banner .btn[data-copy].is-copied {
+  background: var(--color-status-active-bg);
+  border-color: var(--color-status-active);
+}
+
+@media (max-width: 640px) {
+  .info-panel { padding: 1.5rem 1rem; }
+  .simulator-row { flex-direction: column; align-items: stretch; }
+  .contact-banner-actions .btn { flex: 1 1 100%; }
+}
+
+/* ==========================================================================
+   SETOR: DEPENDÊNCIAS — Equipe / Criadores (Grupo 6)
+   ========================================================================== */
+.team-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .team-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-smooth);
+}
+
+.team-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--color-border-hover);
+}
+
+.team-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-pill);
+  background: var(--color-cyan-faminas-soft);
+  color: var(--color-primary-blue);
+  font-family: var(--font-family-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.team-name {
+  font-size: 1.05rem;
+  color: var(--color-primary-navy);
+  margin-bottom: 0.25rem;
+}
+
+.team-role {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.team-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--font-family-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary-blue);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: all var(--transition-smooth);
+}
+
+.team-link:hover {
+  color: var(--color-primary-navy);
+  border-color: var(--color-cyan-faminas);
+  background: var(--color-bg-card);
+}
+
+.team-link .material-symbols-outlined {
+  font-size: 1.05rem;
+}
